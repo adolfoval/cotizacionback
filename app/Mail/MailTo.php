@@ -30,6 +30,6 @@ class MailTo extends Mailable
      */
     public function build()
     {
-        return $this->subject("Prueba de correo cotizacion")->view("emails.EmailsTo");
+        return $this->subject("Nueva cotizacion")->view("emails.EmailsTo");
     }
 }

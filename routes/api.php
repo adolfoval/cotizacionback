@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get("/cotizacion", "App\Http\Controllers\CotizacionController@index");//muestra todas las cotizaciones.
-Route::get("cotizacion/mail", "App\Http\Controllers\CotizacionController@sendEmail");//enviar emails
+Route::post("cotizacion/mail", "App\Http\Controllers\CotizacionController@sendEmail");//enviar emails
 Route::post("/cotizacion/crear", "App\Http\Controllers\CotizacionController@store");//crear una cotizacion.
