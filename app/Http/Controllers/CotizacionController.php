@@ -47,7 +47,7 @@ class CotizacionController extends Controller
             correo de contacto: ".$request->email,
         ];
 
-        Mail::to(["cotizacionmailadolfovv@gmail.com", "sheldoncttbs@gmail.com", "wtsimypants@gmail.com"])->send(new MailTo($detalle));
+        Mail::to(["adolfoval@outlook.com", "sheldoncttbs@gmail.com", "wtsimypants@gmail.com"])->send(new MailTo($detalle));
         return response()->json([
             "Cotizacion realizada" => "Cotizacion agregada."
         ], 200);
